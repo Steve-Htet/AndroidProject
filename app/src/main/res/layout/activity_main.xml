@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:backgroundTint="#010110">
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="413dp"
+            android:layout_height="70dp" android:id="@+id/headline" android:background="#048EF8">
+
+        <TextView
+                android:text="Fual Sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/headtext"
+                android:textColor="#FAF8F8"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.5"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+                android:textSize="40sp"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_dialog_dialer"
+                android:id="@+id/settingbtn" tools:layout_editor_absoluteY="10dp"
+                tools:layout_editor_absoluteX="0dp" android:backgroundTint="#048EF8" android:tint="#0EF82D"
+                android:scaleType="centerInside" tools:srcCompat="@android:drawable/ic_menu_sort_by_size"/>
+    </android.support.constraint.ConstraintLayout>
+    <Button
+            android:text="92 Ron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/octanebt92" tools:layout_editor_absoluteY="85dp"
+            tools:layout_editor_absoluteX="5dp" android:background="#F30707"/>
+    <Button
+            android:text="95 Ron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/octanebt95" tools:layout_editor_absoluteY="85dp"
+            tools:layout_editor_absoluteX="112dp" android:background="#ED6A07"/>
+    <Button
+            android:text="Diesel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/dieselbt"
+            android:background="#9C27B0" tools:layout_editor_absoluteY="85dp" tools:layout_editor_absoluteX="213dp"/>
+    <Button
+            android:text="Premium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/pmdieselbt"
+            android:background="#E91E63" tools:layout_editor_absoluteY="85dp" tools:layout_editor_absoluteX="309dp"/>
+    <TextView
+            android:text="Sale Type :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/saletype" tools:layout_editor_absoluteY="207dp"
+            tools:layout_editor_absoluteX="16dp" android:textSize="20sp" android:textColor="#0B0A0A"/>
+</android.support.constraint.ConstraintLayout>
